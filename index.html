@@ -1,99 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <title>survey-form.freecodecamp.rock</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Original Trombones</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 </head>
+<header id="header">
+    <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png">
+    <nav id="nav-bar">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#how-it-works">How it works</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+    </nav>
+</header>
 <body>
-  <h1 id="title">freeCodeCamp Survey Form</h1>
-  <p id="description">Thank you for taking the time to help us improve the platform</p>
-  <div>
-    <form action="" id="survey-form">
-      <label 
-        for="name" id="name-label">Name
-        </label>
-      <input 
-        type="text" 
-        name="name" 
-        id="name" placeholder="Enter your name" required>
-      <label 
-        for="email" id="email-label">Email
-        </label>
-      <input 
-        type="email" 
-        name="email" 
-        id="email" placeholder="Enter your Email" 
-        required>
-      <label for="age" id="number-label">Age (optional)</label>
-        <input type="number" name="age" id="number" placeholder="Age" min="10" max="99">
-      <label for="role">Which option best describes your current role?</label>
-        <select name="role" id="dropdown">
-          <option value="1" disabled selected>Select current role</option>
-          <option value="2">Student</option>
-          <option value="3">Full Time Job</option>
-          <option value="4">Full Time Learner</option>
-          <option value="5">Prefer not to say</option>
-          <option value="6">Other</option>
-      </select>
-      <label for="recommend">Would you recommend freeCodeCamp to a friend?</label>
-        <input type="radio" name="recommend" id="definitely" class="radio" value="definitely">
-        <label class="radio-definition">Definitely</label>
-        <input type="radio" name="recommend" id="maybe" class="radio" value="maybe">
-        <label class="radio-definition">Maybe</label>
-        <input type="radio" name="recommend" id="not-sure" class="radio" value="not-sure">
-        <label class="radio-definition">Not sure</label>
-      <label for="feature">What is your favorite feature of freeCodeCamp?</label>
-        <select name="feature" id="feature">
-          <option value="1" disabled selected>Select an option</option>
-          <option value="2">Challenges</option>
-          <option value="3">Projects</option>
-          <option value="4">Community</option>
-          <option value="5">Open Source</option>
-        </select>
-      <label for="improve">What would you like to see improved? (Check all that apply)</label>
-      <input type="checkbox" name="front-end-projects" class="improve" value="front-end-projects">
-        <label class="improve-definition">Front-end Projects
-        </label>
-      <input type="checkbox" name="back-end-projects" class="improve" value="back-end-projects">
-        <label class="improve-definition">Back-end Projects
-        </label>
-      <input type="checkbox" name="data-visualization" class="improve" value="data-visualization">
-        <label class="improve-definition">Data Visualization
-        </label>
-      <input type="checkbox" name="challenges" class="improve" value="challenges">
-        <label class="improve-definition">Challenges
-        </label>
-      <input type="checkbox" name="open-source-community" class="improve" value="open-source-community">
-        <label class="improve-definition">Open Source Community
-        </label>
-      <input type="checkbox" name="gitter-help-rooms" class="improve" value="gitter-help-rooms">
-        <label class="improve-definition">Gitter help rooms
-        </label>
-      <input type="checkbox" name="videos" class="improve" value="videos">
-        <label class="improve-definition">Videos
-        </label>
-      <input type="checkbox" name="city-meetups" class="improve" value="city-meetups">
-        <label class="improve-definition">City Meetups
-        </label>
-      <input type="checkbox" name="wiki" class="improve" value="wiki">
-        <label class="improve-definition">Wiki
-        </label>
-      <input type="checkbox" name="forum" class="improve" value="forum">
-        <label class="improve-definition">Forum
-        </label>
-      <input type="checkbox" name="additional-courses" class="improve" value="additional-courses">
-        <label class="improve-definition">Additional Courses
-        </label>
-      <label for="suggestions">Any comments or suggestions?</label>
-        <textarea name="suggestions" id="suggestions" placeholder="Enter your comment here..."></textarea>
-      <input type="submit" name="submit" id="submit" >
-    </form>
-  </div>
+    <section id="hero">
+        <h1 class="hero-content">Handcrafted, home-made masterpieces</h1>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input class="hero-content" id="email" name="email" type="email" placeholder="Enter your email address">
+            <input class="hero-content" id="submit" type="submit" value="GET STARTED">
+        </form>
+    </section>
+    <section id="features">
+        <div class="feature-content">
+            <div class="logos"><i class="fa fa-solid fa-fire"></i></div>
+            <div class="content first">
+                <h2>Premium Materials</h2>
+                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase. </p>
+            </div>
+        </div>
+        <div class="feature-content">
+            <div class="logos"><i class="fa fa-solid fa-truck"></i></div>
+            <div class="content">
+                <h2>Fast Shipping</h2>
+                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied. </p>
+            </div>
+        </div>
+        <div class="feature-content">
+            <div class="logos"><i class="fa fa-solid fa-battery-full"></i></div>
+            <div class="content">
+                <h2>Quality Assurance</h2>
+                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument. </p>
+            </div>
+        </div>
+    </section>
+    <section id="how-it-works">
+        <div id="video-container">
+            <iframe id="video" src="https://www.youtube.com/embed/xZO5KTJTwhE">
+            </iframe>
+        </div> 
+    </section>
+    <section id="pricing">
+        <div id="tenor" class="solding">
+            <div id="tenor-trombone" class="description">
+                <h3>TENOR TROMBONE</h3>
+            </div>
+            <h2>$600</h2>
+            <p>Lorem ipsum.</p>
+            <p>Lorem ipsum.</p>
+            <p>Lorem ipsum dolor.</p>
+            <p>Lorem ipsum.</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div id="bass" class="solding">
+            <div id="bass-trombone" class="description">
+                <h3>BASS TROMBONE</h3>
+            </div>
+            <h2>$900</h2>
+            <p>Lorem ipsum.</p>
+            <p>Lorem ipsum.</p>
+            <p>Lorem ipsum dolor.</p>
+            <p>Lorem ipsum.</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div id="valve" class="solding">
+            <div id="valve-trombone" class="description">
+                <h3>VALVE TROMBONE</h3>
+            </div>
+            <h2>$1200</h2>
+            <p>Plays similar to a Trumpet</p>
+            <p>Great for Jazz Bands</p>
+            <p>Lorem ipsum dolor.</p>
+            <p>Lorem ipsum.</p>
+            <button class="select-button">SELECT</button>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://www.google.com/">Privacy</a>
+            </li>
+            <li>
+                <a href="https://www.google.com/">Terms</a>
+            </li>
+            <li>
+                <a href="https://www.google.com/">Contact</a>
+            </li>
+        </ul>
+        <p id="copyright">Copyright 2016, Original Trombones
+        </p>
+    </footer>
 </body>
 </html>
